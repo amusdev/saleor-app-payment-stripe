@@ -15,7 +15,7 @@
     "dev": "pnpm generate && next dev",
     "build": "pnpm generate && next build",
     "deploy": "tsx ./src/deploy.ts",
-    "start": "next start",
+    "start": "next start -p 5555",
     "fetch-schema": "curl https://raw.githubusercontent.com/saleor/saleor/${npm_package_saleor_schemaVersion}/saleor/graphql/schema.graphql > graphql/schema.graphql",
     "generate": "pnpm generate:graphql && pnpm generate:schema",
     "generate:graphql": "graphql-codegen",
